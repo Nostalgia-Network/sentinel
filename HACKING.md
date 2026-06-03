@@ -38,9 +38,25 @@ Switching branches:
 
 `$ git checkout <branch>`
 
-Merging changes back to main branch (requires a clean working tree):
+*Note: The following merge operations both require a clean working tree, or all changes to be stashed.*
+
+Merging changes back to main branch:
 
 `$ git checkout master`
+
 `$ git pull origin master`
+
 `$ git merge <branch>`
+
 `$ git push origin master`
+
+
+Merging changes from main branch into working branch:
+
+`$ git checkout <branch>`
+
+`$ git fetch origin`
+
+`$ git merge origin/master`
+
+`$ git push origin <branch>`
