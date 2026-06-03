@@ -8,6 +8,17 @@ This project was initialized and is managed using `dotnet` CLI on Windows. Steps
 
 `$ dotnet new gitignore`
 
-## Building the Plugin
+## Building & Testing the Plugin
+
+Create a file `Sentinel.csproj.user` and populate it with the following (replace with your own values):
+```xml
+<Project>
+    <PropertyGroup>
+        <PteroSFTPHost></PteroSFTPHost>
+        <PteroSFTPUser></PteroSFTPUser>
+        <PteroSFTPPass></PteroSFTPPass>
+    </PropertyGroup>
+</Project>
+```
 
 `$ dotnet build`

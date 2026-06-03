@@ -44,4 +44,11 @@
     </Reference>
   </ItemGroup>
 
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="winscp.com /command ^
+      &quot;open sftp://$(PteroSFTPUser):$(PteroSFTPPass)@$(PteroSFTPHost)/ -hostkey=*&quot; ^
+      &quot;put &quot;&quot;$(TargetPath)&quot;&quot; /home/container/Servers/unturned/Rocket/Plugins/&quot; ^
+      &quot;exit&quot;" />
+  </Target>
+
 </Project>
