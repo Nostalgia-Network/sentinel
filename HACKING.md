@@ -8,6 +8,7 @@ This project was initialized and is managed using `dotnet` CLI on Windows. Steps
 
 `$ dotnet new gitignore`
 
+
 ## Building & Testing the Plugin
 
 Create a file `Sentinel.csproj.user` and populate it with the following (replace with your own values):
@@ -25,3 +26,21 @@ Create a file `Sentinel.csproj.user` and populate it with the following (replace
 ```
 
 `$ dotnet build`
+
+
+## Git Stuff
+
+Creating and switching to a new branch:
+
+`$ git switch -c <branch>`
+
+Switching branches:
+
+`$ git checkout <branch>`
+
+Merging changes back to main branch (requires a clean working tree):
+
+`$ git checkout master`
+`$ git pull origin master`
+`$ git merge <branch>`
+`$ git push origin master`
