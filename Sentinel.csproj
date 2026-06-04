@@ -49,12 +49,6 @@
       &quot;open sftp://$(PteroPanelIP):$(PteroSFTPPort)/ -username=$(PteroSFTPUser).$(PteroServerID) -password=$(PteroSFTPPass) -hostkey=*&quot; ^
       &quot;put &quot;&quot;$(TargetPath)&quot;&quot; Servers/unturned/Rocket/Plugins/&quot; ^
       &quot;exit&quot;" />
-
-    <Exec Command="curl -f -k -X POST &quot;http://$(PteroPanelIP)/api/client/servers/$(PteroServerID)/command&quot; ^
-      -H &quot;Authorization: Bearer $(PteroAPIKey)&quot; ^
-      -H &quot;Content-Type: application/json&quot; ^
-      -H &quot;Accept: application/json&quot; ^
-      -d &quot;{\&quot;command\&quot;:\&quot;rocket reload Sentinel\&quot;}&quot;" />
   </Target>
 
 </Project>
