@@ -15,9 +15,8 @@ Create a file `Sentinel.csproj.user` and populate it with the following (replace
 ```xml
 <Project>
     <PropertyGroup>
-        <PteroPanelIP>x.x.x.x</PteroPanelIP>
-        <PteroAPIKey>ptlc_ap1k3y</PteroAPIKey>
         <PteroServerID>s3rv3r1d</PteroServerID>
+        <PteroSFTPURL>sftp://x.x.x.x</PteroSFTPURL>
         <PteroSFTPPort>2022</PteroSFTPPort>
         <PteroSFTPUser>admin</PteroSFTPUser>
         <PteroSFTPPass>supersecretpassword</PteroSFTPPass>
