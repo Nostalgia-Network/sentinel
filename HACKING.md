@@ -24,6 +24,8 @@ Create a file `Sentinel.csproj.user` and populate it with the following (replace
 </Project>
 ```
 
+Build the project and upload the DLL to the test server:
+
 `$ dotnet build`
 
 
@@ -50,7 +52,7 @@ Merging changes back to main branch:
 `$ git push origin master`
 
 
-Merging changes from main branch into working branch:
+Merging changes from master branch into working branch:
 
 `$ git checkout <branch>`
 
