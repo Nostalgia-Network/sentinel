@@ -43,13 +43,13 @@ Switching branches:
 
 Merging changes back to main branch:
 
-`$ git checkout master`
+`$ git checkout main`
 
-`$ git pull origin master`
+`$ git pull origin main`
 
 `$ git merge <branch>`
 
-`$ git push origin master`
+`$ git push origin main`
 
 
 Merging changes from master branch into working branch:
@@ -58,6 +58,6 @@ Merging changes from master branch into working branch:
 
 `$ git fetch origin`
 
-`$ git merge origin/master`
+`$ git merge origin/main`
 
 `$ git push origin <branch>`
