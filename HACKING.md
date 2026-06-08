@@ -51,7 +51,6 @@ Merging changes back to main branch:
 
 `$ git push origin main`
 
-
 Merging changes from master branch into working branch:
 
 `$ git checkout <branch>`
@@ -61,3 +60,11 @@ Merging changes from master branch into working branch:
 `$ git merge origin/main`
 
 `$ git push origin <branch>`
+
+Deleting a branch (remote):
+
+`$ git push origin --delete <branch>`
+
+Deleting a branch (local):
+
+`$ git branch -d <branch>`
